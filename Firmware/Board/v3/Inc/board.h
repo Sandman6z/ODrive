@@ -28,7 +28,13 @@
 #define SHUNT_RESISTANCE (500e-6f)
 #endif
 
+// Number of motor channels present on this board.
+// Set to 1 via the compiler command line (-DAXIS_COUNT=1) for single-channel
+// boards (e.g. a custom board based on ODrive v3.5 with only the M0 channel).
+// See the "v3.5-*V-1ch" board variants in Firmware/Tupfile.lua.
+#ifndef AXIS_COUNT
 #define AXIS_COUNT (2)
+#endif
 
 // Total count of GPIOs, including encoder pins, CAN pins and a dummy GPIO0.
 // ODrive v3.4 and earlier don't have GPIOs 6, 7 and 8 but to keep the numbering

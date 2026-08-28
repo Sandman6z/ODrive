@@ -319,6 +319,9 @@ boards = {
     ["v3.4-48V"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=4 -DHW_VERSION_VOLTAGE=48"}},
     ["v3.5-24V"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=5 -DHW_VERSION_VOLTAGE=24"}},
     ["v3.5-48V"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=5 -DHW_VERSION_VOLTAGE=48"}},
+    -- Single-channel (M0 only) boards based on ODrive v3.5
+    ["v3.5-24V-1ch"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=5 -DHW_VERSION_VOLTAGE=24 -DAXIS_COUNT=1"}},
+    ["v3.5-48V-1ch"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=5 -DHW_VERSION_VOLTAGE=48 -DAXIS_COUNT=1"}},
     ["v3.6-24V"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=6 -DHW_VERSION_VOLTAGE=24"}},
     ["v3.6-56V"] = {include={board_v3}, cflags={"-DHW_VERSION_MINOR=6 -DHW_VERSION_VOLTAGE=56"}},
     ["v4.0-56V"] = {include={board_v4}, cflags={"-DHW_VERSION_MINOR=0 -DHW_VERSION_VOLTAGE=56"}},

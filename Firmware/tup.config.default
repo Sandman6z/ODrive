@@ -1,6 +1,11 @@
 # Copy this file to tup.config and adapt it to your needs
 # make sure this fits your board
 #CONFIG_BOARD_VERSION=v3.6-56V
+# Single-channel (M0 only) boards based on ODrive v3.5 use one of the -1ch
+# variants below. These compile the firmware with AXIS_COUNT=1 and only expose
+# axis0 to odrivetool.
+#CONFIG_BOARD_VERSION=v3.5-24V-1ch
+#CONFIG_BOARD_VERSION=v3.5-48V-1ch
 CONFIG_DEBUG=false
 CONFIG_DOCTEST=false
 CONFIG_USE_LTO=false
